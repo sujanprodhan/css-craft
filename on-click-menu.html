@@ -1,23 +1,23 @@
-
 <style type="text/css">
-.sort-list { position:relative; display:inline-block; z-index:2; padding:0; margin:0; outline:0; text-align:left; }
-/* .menu:before { content: "\2630 \a0 Menu"; 
-    color:white;
-    padding: 5px 10px;
-    border: 1px solid #555;
-    border-radius:3px;
-    background: #96305e;
-    background: -moz-linear-gradient(top,  #96305e 0%, #822956 10%, #822956 90%, #751749 100%);
-    background: -webkit-linear-gradient(top,  #96305e 0%,#822956 10%,#822956 90%,#751749 100%);
-    background: linear-gradient(to bottom,  #96305e 0%,#822956 10%,#822956 90%,#751749 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96305e', endColorstr='#751749',GradientType=0 );
-}
-*/
+  .menu-list {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-align: left;
+  }
 
-.sort-list:focus { pointer-events:none; }
-.sort-list:focus .search-sort-dropdown { opacity:1; visibility:visible; }
+  .menu-list:focus {
+    pointer-events: none;
+  }
+  .menu-list:focus .search-sort-dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
 
-.search-sort-dropdown {
+  .search-sort-dropdown {
     background-color: #f0f0f0;
     width: auto;
     pointer-events: auto;
@@ -25,46 +25,43 @@
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    width:160px;
-    padding:5px 0px;
-	
-    
-}
+    width: 160px;
+    padding: 5px 0px;
+  }
 
-.search-sort-dropdown a {
-    background:transparent;
-    border:none;
-    outline:0;
-    display:block;
-    text-decoration:none;
-	padding: 5px 0px;
-	color:#000;	
-}
+  .search-sort-dropdown a {
+    background: transparent;
+    border: none;
+    outline: 0;
+    display: block;
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #000;
+  }
 
-.search-sort-dropdown a:hover{
-    background:#000;
-    border:none;
-    outline:0;
-    display:block;
-    color:white;
-    text-decoration:none;
-	padding: 5px 0px;
-}
+  .search-sort-dropdown a:hover {
+    background: #000;
+    border: none;
+    outline: 0;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px;
+  }
 
-.sort-menu{
-	background:#f0f0f0;
-	cursor:pointer;
-	padding:10px;
-
-}
+  .view-menu {
+    background: #f0f0f0;
+    cursor: pointer;
+    padding: 10px;
+  }
 </style>
 
-<div tabindex="0" class="sort-list">
-	<div class="sort-menu">   Click Here </div>
-    <div class="search-sort-dropdown">
-        <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-        <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-        <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-        <a href="javascript:alert('No Javascript')">No Javascript</a>
-    </div>
+<div tabindex="0" class="menu-list">
+  <div class="view-menu">Click Here</div>
+  <div class="search-sort-dropdown">
+    <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
+    <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
+    <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
+    <a href="javascript:alert('No Javascript')">No Javascript</a>
+  </div>
 </div>
