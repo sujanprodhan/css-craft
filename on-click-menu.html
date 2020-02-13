@@ -1,4 +1,11 @@
 <style type="text/css">
+  .view-menu {
+    background: #dedede;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px #ddd;
+  }
   .menu-list {
     position: relative;
     display: inline-block;
@@ -6,7 +13,9 @@
     padding: 0;
     margin: 0;
     outline: 0;
-    text-align: left;
+    text-align: center;
+    width: 200px;
+
   }
 
   .menu-list:focus {
@@ -25,7 +34,7 @@
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    width: 160px;
+    width: 200px;
     padding: 5px 0px;
   }
 
@@ -37,8 +46,12 @@
     text-decoration: none;
     padding: 5px 0px;
     color: #000;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
-
+  .search-sort-dropdown a:nth-child(2n){
+    background:#ddd;
+  }
   .search-sort-dropdown a:hover {
     background: #000;
     border: none;
@@ -49,19 +62,17 @@
     padding: 5px 0px;
   }
 
-  .view-menu {
-    background: #f0f0f0;
-    cursor: pointer;
-    padding: 10px;
-  }
+
 </style>
 
 <div tabindex="0" class="menu-list">
-  <div class="view-menu">Click Here</div>
+  <div class="view-menu">Click Here  to View Course </div>
   <div class="search-sort-dropdown">
-    <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-    <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-    <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-    <a href="javascript:alert('No Javascript')">No Javascript</a>
+    <a href="#">React JS </a>
+    <a href="#">Node JS </a>
+    <a href="#">Next JS </a>
+    <a href="#">PHP </a>
+    <a href="#">Laravel </a>
+    <a href="#">Java </a>
   </div>
 </div>
